@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --primeira-cor: #FFFCF1;
+  --segunda-cor: #BC978A;
+  --terceira-cor: #109F72;
+  --quarta-cor: #003C41;
+  --quinta-cor: #8473E5;
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-secundaria: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background: var(--primeira-cor);
+}
+
+
+/* Cabecalho */
+
+header{
+  font-family: var(--fonte-principal);
+  color: var(--quarta-cor);
+}
+
+.header {
+  box-sizing: border-box;
+  display: flex;
+  padding: 1.25rem;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.menu ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #001011;
+}
+
+/* hero-section */
+
+#btnContact {
+  padding: 10px 20px;
+  background-color: var(--quinta-cor);
+  border-radius: 10px;
+}
+
+#btnContact a {
+  color: #FFFCF1;
+}
+
+.hero-section {
+  height: 900px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-bg {
+  background-image: url(../img/casa-background.webp);
+  background-position: center center;
+  background-size: cover;
+  filter: brightness(70%) blur(3px) ;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-info {
+  position: absolute;
+  z-index: 10;
+  color: #FFFCF1;
+  display: flex;
+  gap: 8rem;
+}
+
+.hero-info h1{
+ font-family: var(--fonte-principal);
+ font-size: 72px;
+}
+
+.hero-text {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.hero-text p {
+  font-family: var(--fonte-secundaria);
+  text-align: center;
+  font-size: 16px;
+}
+
+.hero-text p strong {
+  font-size: 20px;
+}
+
+#ctaForm {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+
+#ctaForm  input {
+  background: rgba(132, 115, 229, 0.3);
+  border-radius: 10px;
+  padding: 15px;
+  border: none;
+  color: #FFFCF1;
+  backdrop-filter: blur(15px);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  width: 400px;
+}
+
+#ctaForm  input::placeholder {
+  color: #FFFCF1;
+}
+
+#ctaForm  button {
+  background: rgba(132, 115, 229, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  color: #FFFCF1;
+  backdrop-filter: blur(15px);
+  font-family: var(--fonte-principal);
+  font-weight: 600px;
+  font-size: 24px;
+  width: 291px;
+}
+
+/* intro-section */
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
+
+.intro-section h1 {
+  color: var(--terceira-cor);
+  font-family: var(--fonte-principal);
+  font-size: 56px;
+  font-weight: 700px;
+}
+
+.intro-section p {
+  color: var(--quarta-cor);
+  font-family: var(--fonte-secundaria);
+  font-size: 24px;
+  font-weight: 400px;
+  margin-top: 20px;
+}
