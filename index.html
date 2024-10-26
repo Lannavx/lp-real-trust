@@ -14,9 +14,9 @@
     </div>
     <nav class="menu">
       <ul>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Depoimentos</a></li>
+        <li><a href="#intro-section">Serviços</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#testimonials">Depoimentos</a></li>
         <li id="btnContact"><a href="#">Contato</a></li>
       </ul>
     </nav>
@@ -37,40 +37,125 @@
      <div class="hero-bg"></div>
     </section>
     
-    <section class="intro-section">
+    <section class="intro-section" id="intro-section">
       <h1>O Corretor de imóveis para você</h1>
       <p>A Real Trust tem um olho para ver o potencial de uma propriedade, coordenando o design <br> e o marketing eficaz para obter o máximo de dinheiro para os proprietários em suas vendas.</p>
     </section>
 
-    <section>
+    <section class="services">
       <h2>Por que nos escolher?</h2>
+      <div class="description">
+        <div class="description-item">
+          <img src="src/img/bx-dollar-circle.png" alt="bx dollar circle">
+          <h3>ROI Potencial</h3>
+          <p>Quer você esteja procurando comprar uma casa para consertar ou reformar sua casa atual para venda, nós o orientaremos sobre os retornos potenciais dos projetos.</p>
+        </div>
+
+        <div class="description-item">
+          <img src="src/img/bx-line-chart.png" alt="bx line chart">
+          <h3>Marketing</h3>
+          <p>Consultoria de preparação, fotos profissionais e um sofisticado plano de marketing digital acompanham cada listagem para atingir os compradores de hoje.</p>
+        </div>
+
+        <div class="description-item">
+          <img src="src/img/bx-pen.png" alt="bx pen">
+          <h3>Design</h3>
+          <p>Nossa experiência em design de interiores é o guia perfeito para suas opções de design e coordenação de empreiteiros para concluir a reforma da casa.</p>
+        </div>
+      </div>
     </section>
 
-
-    <section>
-      <img src="" alt="logo da marca">
-      <h1>Sobre nós</h1>
-      <p>Quinze anos de experiência em imóveis, excelente atendimento ao cliente e um compromisso de trabalhar duro, ouvir e acompanhar. Oferecemos serviço de qualidade para construir relacionamentos com clientes e, mais importante, manter esses relacionamentos por meio da comunicação eficaz.</p>
-      <button>Saiba Mais</button>
+    <section class="about-section">
+      <div class="about-images">
+        <img src="src/img/emblem.svg" alt="mark logo" id="logo">
+        <div class="logo-bg"></div>
+      </div>
+      <div class="about-text">
+        <h1>Sobre nós</h1>
+        <p>Quinze anos de experiência em imóveis, excelente atendimento ao cliente e um compromisso de trabalhar duro, ouvir e acompanhar. Oferecemos serviço de qualidade para construir relacionamentos com clientes e, mais importante, manter esses relacionamentos por meio da comunicação eficaz.</p>
+        <button>Saiba Mais</button>
+      </div>
+    </div>
     </section>
 
-    <section>
+    <section class="projects" id="projects">
       <h1>Projetos</h1>
       <p>Nós sabemos o que compradores estão buscando e sugerimos projetos que trarão clientes de alto padrão para os seus imóveis</p>
-      <!-- CARROSSEL DE IMAGENS -->
+       <div class="carroussel">
+        <button class="arrow-btn"><img src="src/img/left-arrow.svg" alt="left arrow"></button>
+        <div class="carroussel-images">
+          <div><img src="src/img/kitchen.webp" alt="kitchen"></div>
+          <div class="active-image"><img src="src/img/house.webp" alt="house"></div>
+          <div><img src="src/img/living-room.webp" alt="living room"></div>
+        </div>
+        <button class="arrow-btn"><img src="src/img/right-arrow.svg" alt="right arrow"></button>
+       </div>
     </section>
 
-    <section>
-      <p>See what our clients have to say</p>
-      <h1>Testimonials</h1>
+    <section class="testimonials" id="testimonials">
+      <p>Veja o que nossos clientes têm a dizer</p>
+      <h1>Depoimentos</h1>
+      <div class="testimonials-container">
+        <div class="clients-container">
 
+          <!-- Client 1 -->
+          <div class="client-container">
+            <div class="client-img-cntr"><img src="" alt=""></div>
+            <div class="client-info-cntr">
+              <h3>Nome</h3>
+              <p>Descrição breve</p>
+            </div>
+          </div>
+
+          <!-- Client 2 -->
+          <div class="client-container">
+            <div class="client-img-cntr"><img src="" alt=""></div>
+            <div class="client-info-cntr">
+              <h3>Nome</h3>
+              <p>Descrição breve</p>
+            </div>
+          </div>
+
+          <!-- Client 3 -->
+          <div class="client-container active">
+            <div class="client-img-cntr"><img src="" alt=""></div>
+            <div class="client-info-cntr">
+              <h3>Nome</h3>
+              <p>Descrição breve</p>
+            </div>
+          </div>
+
+          <!-- Client 4 -->
+          <div class="client-container">
+            <div class="client-img-cntr"><img src="" alt=""></div>
+            <div class="client-info-cntr">
+              <h3>Nome</h3>
+              <p>Descrição breve</p>
+            </div>
+          </div>
+
+          <!-- Client 5 -->
+          <div class="client-container">
+            <div class="client-img-cntr"><img src="" alt=""></div>
+            <div class="client-info-cntr">
+              <h3>Nome</h3>
+              <p>Descrição breve</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="client-testimonial">
+          <span></span>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure provident beatae aliquam praesentium adipisci veniam obcaecati deserunt, fuga, aut numquam saepe recusandae, nisi explicabo officia tenetur dicta omnis nemo fugit</p>
+        </div>
+      </div>
       <p>Saiba mais sobre nosso processo de listagem, assim como nossos serviços adicionais de design e preparação.</p>
       <button>Saiba Mais</button>
     </section>
   </main>
 
   <footer>
-    <img src="" alt="logo real trust">
+    <img src="src/img/logo-rodape.svg" alt="logo-real-trust">
     <h1>Real Trust</h1>
     <nav>
       <ul>
@@ -82,10 +167,9 @@
 
     <nav class="redes-sociais">
       <ul>
-        <li><img src="" alt=""><a href=""></a></li>
-        <li><img src="" alt=""><a href=""></a></li>
-        <li><img src="" alt=""><a href=""></a></li>
-        <li><img src="" alt=""><a href=""></a></li>
+        <li><img src="src/img/bxl-instagram-alt.svg" alt="instragram"><a href="#"></a></li>
+        <li><img src="src/img/bxl-linkedin-square.svg" alt="linkedin"><a href="#"></a></li>
+        <li><img src="src/img/bxl-facebook-circle.svg" alt="facebook"><a href="#"></a></li>
       </ul>
     </nav>
   </footer>
