@@ -1,0 +1,131 @@
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.testimonials-title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.clients-container {
+  width: 100%;
+}
+
+.client-container {
+  display: none;
+}
+
+.client-container.active {
+  display: flex;
+  background: var(--third-color);
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: var(--soft-box-shadow);
+  color: var(--first-color);
+}
+
+.client-container .client-img-cntr {
+  overflow: hidden;
+  border-radius: 1rem;
+  width: 64px;
+  height: 64px;
+}
+
+.client-img-cntr img {
+  width: 100%;
+}
+
+.client-testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--third-color);
+  box-shadow: var(--soft-box-shadow);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.client-testimonial p {
+  color: var(--first-color);
+}
+
+.client-testimonial span {
+  position: absolute;
+  top: 0;
+  right: 1rem;
+  font-size: 6rem;
+  line-height: 3.5rem;
+  color: var(--fourth-color);
+}
+
+@media (min-width: 1200px) {
+  .testimonials-container {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .clients-container {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .client-container {
+    display: flex;
+    background: var(--second-color);
+    padding: 1rem;
+    gap: 1rem;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: var(--soft-box-shadow);
+    color: var(--first-color);
+  }
+
+  .client-container.first-and-last {
+    width: 300px;
+  }
+
+  .client-container.active {
+    width: 380px;
+  }
+
+  .client-container.previous-and-next {
+    width: 340px;
+  }
+
+  .client-testimonial {
+    height: 375px;
+    padding: 4rem;
+  }
+
+  .client-testimonial p {
+    width: 500px;
+    font-size: 1.5rem;
+  }
+
+  .client-testimonial span {
+    font-size: 13rem;
+    line-height: 8rem;
+  }
+}

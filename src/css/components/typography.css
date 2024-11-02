@@ -1,0 +1,19 @@
+.title {
+  font-family: var(--main-typo);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--fourth-color);
+}
+
+.text {
+  font-family: var(--secondary-typo);
+  font-weight: 400;
+  color: var(--fourth-color);
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .title {
+    font-size: 2rem;
+  }
+}

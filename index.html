@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="shortcut icon" href="src/img/icons/favicon.ico" type="image/logo-icon">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <title>Real Trust</title>
 </head>
+
 <body>
 
-  <a href="#header" class="top-buttom"><img src="src/img/icons/right-arrow.svg" alt="top arrow"></a>
+  <a href="#header" class="top-button"><box-icon name='chevron-up' size="md" color="#fff"></box-icon></a>
 
   <header class="header" id="header">
     <div class="logo">
       <img src="src/img/icons/vector.svg" alt="logo real trust">
       <h1>Real Trust</h1>
     </div>
-    <nav class="menu">
-      <ul>
+    <nav id="menu">
+      <button id="btn-mobile"><img src="src/img/icons/bx-menu.svg" alt="menu"></button>
+      <ul class="menu-list">
         <li><a href="#intro-section">Serviços</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#testimonials">Depoimentos</a></li>
-        <li id="btnContact"><a href="#">Contato</a></li>
+        <li id="btnContact"><button class="btn">Contato</button></li>
       </ul>
     </nav>
   </header>
@@ -29,42 +33,46 @@
   <main>
     <section class="hero-section">
       <div class="hero-info">
-        <h1>Consultoria<br>Design &<br>Marketing</h1>
+        <h1>Consultoria Design & Marketing</h1>
         <div class="hero-text">
-          <p><strong>Saiba mais sobre o nosso processo de listagem</strong> <br>e conheça nosso trabalho adicional<br> de preparação e design.</p>
+          <p><strong>Saiba mais sobre o nosso processo de listagem</strong><br>e conheça nosso trabalho adicional de preparação e design.</p>
           <form id="ctaForm" autocomplete="off">
-            <input type="email" name="email" id="email" placeholder="seumelhor@email.com"> 
-            <button>Comece conosco</button>
-        </form>
+            <input type="email" name="email" id="email" placeholder="seumelhor@email.com">
+            <button class="btn form-btn">Comece conosco</button>
+          </form>
         </div>
-     </div>
-     <div class="hero-bg"></div>
+      </div>
+      <img src="src/img/background/casa-background.webp" class="hero-bg">
     </section>
-    
+
     <section class="intro-section" id="intro-section">
       <h1>O Corretor de imóveis para você</h1>
-      <p>A Real Trust tem um olho para ver o potencial de uma propriedade, coordenando o design <br> e o marketing eficaz para obter o máximo de dinheiro para os proprietários em suas vendas.</p>
+      <p class="text">A Real Trust tem um olho para ver o potencial de uma propriedade, coordenando o design e o marketing eficaz para obter 
+        o máximo de dinheiro para os proprietários em suas vendas.</p>
     </section>
 
     <section class="services">
-      <h2>Por que nos escolher?</h2>
+      <h2 class="title">Por que nos escolher?</h2>
       <div class="description">
         <div class="description-item">
           <img src="src/img/icons/bx-dollar-circle.png" alt="bx dollar circle">
-          <h3>ROI Potencial</h3>
-          <p>Quer você esteja procurando comprar uma casa para consertar ou reformar sua casa atual para venda, nós o orientaremos sobre os retornos potenciais dos projetos.</p>
+          <h3 class="title">ROI Potencial</h3>
+          <p class="text">Quer você esteja procurando comprar uma casa para consertar ou reformar sua casa atual para venda,
+            nós o orientaremos sobre os retornos potenciais dos projetos.</p>
         </div>
 
         <div class="description-item">
           <img src="src/img/icons/bx-line-chart.png" alt="bx line chart">
-          <h3>Marketing</h3>
-          <p>Consultoria de preparação, fotos profissionais e um sofisticado plano de marketing digital acompanham cada listagem para atingir os compradores de hoje.</p>
+          <h3 class="title">Marketing</h3>
+          <p class="text">Consultoria de preparação, fotos profissionais e um sofisticado plano de marketing digital
+            acompanham cada listagem para atingir os compradores de hoje.</p>
         </div>
 
         <div class="description-item">
           <img src="src/img/icons/bx-pen.png" alt="bx pen">
-          <h3>Design</h3>
-          <p>Nossa experiência em design de interiores é o guia perfeito para suas opções de design e coordenação de empreiteiros para concluir a reforma da casa.</p>
+          <h3 class="title">Design</h3>
+          <p class="text">Nossa experiência em design de interiores é o guia perfeito para suas
+            opções de design e coordenação de empreiteiros para concluir a reforma da casa.</p>
         </div>
       </div>
     </section>
@@ -72,41 +80,99 @@
     <section class="about-section">
       <div class="about-images">
         <img src="src/img/icons/emblem.svg" alt="real trust emblem" id="logo">
-        <div class="logo-bg"></div>
+        <img src="src/img/background/mark-logo.webp">
       </div>
       <div class="about-text">
-        <h1>Sobre nós</h1>
-        <p>Quinze anos de experiência em imóveis, excelente atendimento ao cliente e um compromisso de trabalhar duro, ouvzzacompanhar. 
+        <h1 class="title">Sobre nós</h1>
+        <p class="text">Quinze anos de experiência em imóveis, excelente atendimento ao cliente e um compromisso de trabalhar duro, ouvir e acompanhar. 
           Oferecemos serviço de qualidade para construir relacionamentos com clientes e, mais importante, manter esses relacionamentos por meio da comunicação eficaz.</p>
-        <button>Saiba Mais</button>
+        <button class="btn">Saiba Mais</button>
       </div>
-    </div>
+      </div>
     </section>
 
     <section class="projects" id="projects">
-      <h1>Projetos</h1>
-      <p>Nós sabemos o que compradores estão buscando e sugerimos projetos que trarão clientes de alto padrão 
+      <h1 class="title">Projetos</h1>
+      <p class="text">Nós sabemos o que compradores estão buscando e sugerimos projetos que trarão clientes de alto padrão
         para os seus imóveis</p>
-       <div class="carroussel">
+      <div class="carroussel">
         <button class="arrow-btn"><img src="src/img/icons/left-arrow.svg" alt="left arrow"></button>
         <div class="carroussel-images">
-          <div><img src="src/img/background/projects/kitchen.webp" alt="kitchen decoration"></div>
-          <div class="active-image"><img src="src/img/background/projects/house.webp" alt="house"></div>
-          <div><img src="src/img/background/projects/living-room.webp" alt="living room decoration"></div>
+
+          <!-- Project 1 -->
+          <div class="project-box" id="project1">
+            <div class="project-container">
+              <div class="project-infos">
+                <div class="project-location">
+                  <p>São Paulo, SP</p>
+                  <box-icon name='map-pin' type='solid' color='#ffffff'></box-icon>
+                </div>
+                <div class="project-description">
+                  <div class="project-detail">
+                    <p>Design & Marketing</p>
+                    <h2>Sala Decorada</h2>
+                  </div>
+                  <button class="project-detail-btn"><box-icon name='chevron-right' color='#003C41' size="lg"></box-icon></button>
+                </div>
+              </div>
+              <img src="src/img/background/projects/kitchen.webp" alt="kitchen decoration">
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="project-box active" id="project2">
+            <div class="project-container">
+              <div class="project-infos">
+                <div class="project-location">
+                  <p>Gramado, RS</p>
+                  <box-icon name='map-pin' type='solid' color='#ffffff'></box-icon>
+                </div>
+                <div class="project-description">
+                  <div class="project-detail">
+                    <p>Design & Marketing</p>
+                    <h2>Casa do Vale</h2>
+                  </div>
+                  <button class="project-detail-btn"><box-icon name='chevron-right' color='#003C41' size="lg"></box-icon></button>
+                </div>
+              </div>
+              <img src="src/img/background/projects/house.webp" alt="house">
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="project-box" id="project3">
+            <div class="project-container">
+              <div class="project-infos">
+                <div class="project-location">
+                  <p>São Paulo, SP</p>
+                  <box-icon name='map-pin' type='solid' color='#ffffff'></box-icon>
+                </div>
+                <div class="project-description">
+                  <div class="project-detail">
+                    <p>Design & Marketing</p>
+                    <h2>Cozinha Decorada</h2>
+                  </div>
+                  <button class="project-detail-btn"><box-icon name='chevron-right' color='#003C41' size="lg"></box-icon></button>
+                </div>
+              </div>
+              <img src="src/img/background/projects/living-room.webp" alt="living room decoration">
+            </div>
+          </div>
+
         </div>
         <button class="arrow-btn"><img src="src/img/icons/right-arrow.svg" alt="right arrow"></button>
-       </div>
+      </div>
     </section>
 
+
     <section class="testimonials" id="testimonials">
-      <div>
-        <p>Veja o que nossos clientes têm a dizer</p>
-        <h1>Depoimentos</h1>
-    </div>
+      <div class="testimonials-title">
+        <h1 class="title">Depoimentos</h1>
+        <p class="text">Veja o que nossos clientes têm a dizer</p>
+      </div>
       <div class="testimonials-container">
         <div class="clients-container">
 
-          <!-- Client 1 -->
           <div class="client-container first-and-last" id="client1">
             <div class="client-img-cntr"><img src="src/img/customers/customer1.webp" alt=""></div>
             <div class="client-info-cntr">
@@ -115,7 +181,6 @@
             </div>
           </div>
 
-          <!-- Client 2 -->
           <div class="client-container previous-and-next" id="client2">
             <div class="client-img-cntr"><img src="src/img/customers/customer2.webp" alt=""></div>
             <div class="client-info-cntr">
@@ -124,7 +189,6 @@
             </div>
           </div>
 
-          <!-- Client 3 -->
           <div class="client-container active" id="client3">
             <div class="client-img-cntr"><img src="src/img/customers/customer3.webp" alt=""></div>
             <div class="client-info-cntr">
@@ -133,7 +197,6 @@
             </div>
           </div>
 
-          <!-- Client 4 -->
           <div class="client-container previous-and-next" id="client4">
             <div class="client-img-cntr"><img src="src/img/customers/customer4.webp" alt=""></div>
             <div class="client-info-cntr">
@@ -142,7 +205,6 @@
             </div>
           </div>
 
-          <!-- Client 5 -->
           <div class="client-container first-and-last" id="client5">
             <div class="client-img-cntr"><img src="src/img/customers/customer5.webp" alt=""></div>
             <div class="client-info-cntr">
@@ -150,18 +212,19 @@
               <p>Arquiteto</p>
             </div>
           </div>
-          
+
         </div>
         <div class="client-testimonial">
           <span>“</span>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure provident beatae aliquam praesentium adipisci veniam obcaecati deserunt, fuga, aut numquam saepe recusandae, nisi explicabo officia tenetur dicta omnis nemo fugit</p>
+          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure provident beatae aliquam praesentium adipisci
+            veniam obcaecati deserunt, fuga, aut numquam saepe recusandae, nisi explicabo officia tenetur dicta omnis nemo fugit</p>
         </div>
       </div>
-    </section>  
-    
-      <section class="end-cta">
-        <p>Saiba mais sobre nosso processo de listagem, assim como nossos serviços adicionais de design e preparação.</p>
-        <button>Saiba Mais</button>
+    </section>
+
+    <section class="end-cta">
+      <p class="text">Saiba mais sobre nosso processo de listagem, assim como nossos serviços adicionais de design e preparação.</p>
+      <button class="btn">Saiba Mais</button>
     </section>
   </main>
 
@@ -169,7 +232,7 @@
     <div class="logo-footer">
       <img src="src/img/icons/logo-rodape.svg" alt="logo real trust">
       <h1>Real Trust</h1>
-   </div>  
+    </div>
 
     <nav class="footer-menu">
       <ul>
@@ -181,11 +244,13 @@
 
     <nav class="social-media">
       <ul>
-        <li><img src="src/img/icons/bxl-instagram-alt.svg" alt="instragram"><a href="#"></a></li>
-        <li><img src="src/img/icons/bxl-linkedin-square.svg" alt="linkedin"><a href="#"></a></li>
-        <li><img src="src/img/icons/bxl-facebook-circle.svg" alt="facebook"><a href="#"></a></li>
+        <li><a href="#footer"><img src="src/img/icons/bxl-instagram-alt.svg" alt="instragram"></a></li>
+        <li><a href="#footer"><img src="src/img/icons/bxl-linkedin-square.svg" alt="linkedin"></a></li>
+        <li><a href="#footer"><img src="src/img/icons/bxl-facebook-circle.svg" alt="facebook"></a></li>
       </ul>
     </nav>
   </footer>
+  <script src="src/js/menu-mobile.js"></script>
 </body>
+
 </html>

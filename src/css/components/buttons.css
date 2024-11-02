@@ -1,0 +1,71 @@
+.top-button {
+  display: none;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  background-color: var(--fourth-color);
+  border-radius: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.btn {
+  background: var(--fifth-color);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: var(--first-color);
+  font-family: var(--main-typo);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  box-shadow: var(--soft-box-shadow);
+}
+
+.form-btn {
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  box-shadow: var(--box-shadow);
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  display: none;
+}
+
+/* Desktop and Large Screens */
+@media (min-width: 1200px) {
+  .btn {
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+  }
+
+  .top-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-btn {
+    display: block;
+  }
+
+  .form-btn {
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    box-shadow: var(--box-shadow);
+    border-radius: 0.5rem;
+    font-size: 1.25rem;
+  }
+
+  #btnContact .btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+}
