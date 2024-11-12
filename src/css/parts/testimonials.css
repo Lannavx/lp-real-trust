@@ -19,6 +19,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  width: 100%;
 }
 
 .clients-container {
@@ -61,6 +62,8 @@
   text-align: center;
   border-radius: 1rem;
   position: relative;
+  height: 200px;
+  width: 100%;
 }
 
 .client-testimonial p {
@@ -80,6 +83,7 @@
   .testimonials-container {
     flex-direction: row;
     gap: 3rem;
+    width: auto;
   }
 
   .clients-container {
@@ -100,18 +104,15 @@
     border-radius: 1rem;
     box-shadow: var(--soft-box-shadow);
     color: var(--first-color);
-  }
-
-  .client-container.first-and-last {
-    width: 300px;
+    transition: all 0.3s ease;
+    opacity: 0.5;
+    width: 380px;
+    cursor: pointer;
   }
 
   .client-container.active {
     width: 380px;
-  }
-
-  .client-container.previous-and-next {
-    width: 340px;
+    opacity: 1;
   }
 
   .client-testimonial {
@@ -128,4 +129,5 @@
     font-size: 13rem;
     line-height: 8rem;
   }
+  
 }

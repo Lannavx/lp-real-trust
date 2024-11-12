@@ -96,7 +96,7 @@
       <p class="text">Nós sabemos o que compradores estão buscando e sugerimos projetos que trarão clientes de alto padrão
         para os seus imóveis</p>
       <div class="carroussel">
-        <button class="arrow-btn"><img src="src/img/icons/left-arrow.svg" alt="left arrow"></button>
+        <button id="previous-btn" class="arrow-btn"><img src="src/img/icons/left-arrow.svg" alt="left arrow"></button>
         <div class="carroussel-images">
 
           <!-- Project 1 -->
@@ -110,7 +110,7 @@
                 <div class="project-description">
                   <div class="project-detail">
                     <p>Design & Marketing</p>
-                    <h2>Sala Decorada</h2>
+                    <h2>Cozinha Decorada</h2>
                   </div>
                   <button class="project-detail-btn"><box-icon name='chevron-right' color='#003C41' size="lg"></box-icon></button>
                 </div>
@@ -120,7 +120,7 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="project-box active" id="project2">
+          <div class="project-box" id="project2">
             <div class="project-container">
               <div class="project-infos">
                 <div class="project-location">
@@ -150,7 +150,7 @@
                 <div class="project-description">
                   <div class="project-detail">
                     <p>Design & Marketing</p>
-                    <h2>Cozinha Decorada</h2>
+                    <h2>Sala Decorada</h2>
                   </div>
                   <button class="project-detail-btn"><box-icon name='chevron-right' color='#003C41' size="lg"></box-icon></button>
                 </div>
@@ -160,8 +160,10 @@
           </div>
 
         </div>
-        <button class="arrow-btn"><img src="src/img/icons/right-arrow.svg" alt="right arrow"></button>
+        
+        <button id="next-btn" class="arrow-btn"><img src="src/img/icons/right-arrow.svg" alt="right arrow"></button>
       </div>
+      <div class="dots-container" id="dotsProjects"></div>
     </section>
 
 
@@ -173,7 +175,7 @@
       <div class="testimonials-container">
         <div class="clients-container">
 
-          <div class="client-container first-and-last" id="client1">
+          <div class="client-container" data-testimonial="O serviço superou minhas expectativas. Os profissionais foram eficientes e entregaram tudo antes do prazo. Estou muito satisfeita!">
             <div class="client-img-cntr"><img src="src/img/customers/customer1.webp" alt=""></div>
             <div class="client-info-cntr">
               <h3>Lucy Almeida</h3>
@@ -181,7 +183,7 @@
             </div>
           </div>
 
-          <div class="client-container previous-and-next" id="client2">
+          <div class="client-container" data-testimonial="A equipe demonstrou muito conhecimento e expertise. Confiaria meus projetos a eles novamente sem dúvidas!"> 
             <div class="client-img-cntr"><img src="src/img/customers/customer2.webp" alt=""></div>
             <div class="client-info-cntr">
               <h3>Bianca Costa</h3>
@@ -189,7 +191,7 @@
             </div>
           </div>
 
-          <div class="client-container active" id="client3">
+          <div class="client-container active" data-testimonial="A experiência foi incrível! A equipe foi profissional e atendeu todas as minhas expectativas.">
             <div class="client-img-cntr"><img src="src/img/customers/customer3.webp" alt=""></div>
             <div class="client-info-cntr">
               <h3>Rafael Martins</h3>
@@ -197,7 +199,7 @@
             </div>
           </div>
 
-          <div class="client-container previous-and-next" id="client4">
+          <div class="client-container" data-testimonial="Excelente comunicação e suporte em todas as etapas. Foi uma experiência muito positiva e estou muito feliz com o resultado!">
             <div class="client-img-cntr"><img src="src/img/customers/customer4.webp" alt=""></div>
             <div class="client-info-cntr">
               <h3>Camila Rocha</h3>
@@ -205,7 +207,7 @@
             </div>
           </div>
 
-          <div class="client-container first-and-last" id="client5">
+          <div class="client-container" data-testimonial="Eu me senti muito bem atendido, com uma abordagem personalizada e resultados surpreendentes!">
             <div class="client-img-cntr"><img src="src/img/customers/customer5.webp" alt=""></div>
             <div class="client-info-cntr">
               <h3>Bruno Ferreira</h3>
@@ -214,12 +216,12 @@
           </div>
 
         </div>
-        <div class="client-testimonial">
+        <div class="client-testimonial ">
           <span>“</span>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure provident beatae aliquam praesentium adipisci
-            veniam obcaecati deserunt, fuga, aut numquam saepe recusandae, nisi explicabo officia tenetur dicta omnis nemo fugit</p>
+          <p class="text">A experiência foi incrível! A equipe foi profissional e atendeu todas as minhas expectativas.</p>
         </div>
       </div>
+      <div class="dots-container" id="dotsTestimonials"></div>
     </section>
 
     <section class="end-cta">
@@ -250,7 +252,10 @@
       </ul>
     </nav>
   </footer>
+  
   <script src="src/js/menu-mobile.js"></script>
+  <script src="src/js/slider-projects.js"></script>
+  <script src="src/js/slider-testimonials.js"></script>
 </body>
 
 </html>
